@@ -92,7 +92,7 @@ probs<-c(0.214, 0.230, 0.240, 0.182, 0.130, 0.003, 0.001)
 ```{r test1cii}
 cumprobs<-cumsum(probs)
 plot(x = outcomes, y = cumprobs, type = "s", xlab = "Outcomes", ylab = "Cumulative Probability")
-abline(v = median(outcomes), lty = 1, col = "red")
+abline(v = median(cumprobs), lty = 1, col = "red")
 text(x = 3.5, y = .4, labels = "Median = 3", col = "red")
 
 
